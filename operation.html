@@ -10,19 +10,26 @@
 <body>
     <h2>OPERATIONS</h2>
     <script>
+
         let input1 = parseInt(prompt("Enter first value : ")); 
         let input2 = parseInt(prompt("Enter second value : ")); 
-        function greaterValue(input1, input2){
-            document.write(" To check the greater value <br/>");
+
+        const greatestValue = (input1, input2) =>{
+
+            document.write(" To check the greatest value <br/>");
+
             if(input1 > input2){
-                document.write(input1 +" is greater value <br/> " );
+                document.write(input1 +" is greatest value <br/> " );
             }
             else{
-                document.write(input2 +" is greater value <br/> " );
+                document.write(input2 +" is greatest value <br/> " );
             }
         }
-        function oddOrEven(input1 , input2){
+
+        const oddOrEven = (input1 , input2) =>{
+
             document.write("To check the value is odd or even <br/>");
+
             if(input1 %2 === 0){
                 document.write(input1 +" is even number <br/> " );
             }
@@ -36,8 +43,11 @@
                 document.write(input2 +" is odd number <br/> " );
             }
         }
-        function eligibility(input1 , input2){
+
+        const eligibility = (input1 , input2) =>{
+
             document.write("To check the age value is eligible to vote <br/>");
+
             if(input1 >18){
                 document.write(input1+" is eligible <br/>");
             }
@@ -51,7 +61,9 @@
                 document.write(input2+" is not eligible <br/><br/>");
             }
         }
-        function arithmeticCalculation(input1, input2){
+
+        const arithmeticCalculation = (input1, input2) =>{
+
             document.write("To perform the basic operations of two values: <br/>");
             document.write("Result of the operations value is : ");
             document.write("<br/> Addition of "+input1+ " and "+ input2+ " is : "+ (input1 + input2));
@@ -59,7 +71,9 @@
             document.write("<br/> Multiplication of "+input1+ " and "+ input2+ " is :  "+ (input1 * input2));
             document.write("<br/> Division of "+input1+ " and "+ input2+ " is : "+ (input1 / input2));
         }
-        function precedenceOperator(input1, input2){
+
+        const precedenceOperator = (input1, input2) =>{
+
             document.write("<br/><br/> To perform the precedence operations using three values <br/>");
             let input3 = 30;
             document.write("input1 = "+input1+ "<br/> input2 = "+input2+"<br/> input3 = "+input3);
@@ -68,7 +82,7 @@
             document.write("<br/> To check the expression value of input1*(input3+input2*input3) is : "+input1*(input3+input2*input3));
         }
     
-        greaterValue(input1, input2);
+        greatestValue(input1, input2);
         oddOrEven(input1, input2);
         eligibility(input1, input2);
         arithmeticCalculation(input1, input2);

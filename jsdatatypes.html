@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body  style="background-color: rgb(205, 50, 166);" >
 
 <h2>JavaScript Data Types</h2>
 
-<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
 
 <p id="demo"></p>
+<p id="obj"></p>
+<p id="numstr"></p>
+<p id="strnum"></p>
+<p id="num2str"></p>
+<p id="strnum2"></p>
+<p id="dblequo"></p>
+<p id="sinquo"></p>
+<p id="sqdq"></p>
+<p id="sqidq"></p>
+<p id="dqsq"></p>
+<p id="dec"></p>
+<p id="wodec"></p>
+<p id="e1"></p>
+<p id="e2"></p>
+<p id="boolean1"></p>
+<p id="array"></p>
+<p id="object"></p>
+<p id="typeofnum"></p>
+<p id="typeofstr"></p>
+<p id="objobj"></p>
+
 
 <script>
 let x;         // Now x is undefined
-x = 5;         // Now x is a Number
-x = "John";    // Now x is a String
+x = 10;         // Now x is a Number
+x = "Joe";    // Now x is a String
+let i1 = 16 + "Volvo";
+let i2= "Volvo" + 16;
+let i3 = 16 + 4 + "Volvo";
+let i4 = "Volvo" + 16 + 4;
+let carName1 = "Volvo XC60";   // Using double quotes
+let carName2 = 'Volvo XC60';   // Using single quotes
+let answer1 = "It's alright";             // Single quote inside double quotes
+let answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes
+let answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes
+let x1 = 34.00;     // Written with decimals
+let x2 = 34;        // Written without decimals
+let y1 = 123e5;      // 12300000
+let y2 = 123e-5;     // 0.00123
+let m1 = 5;
+let m2 = 5;
+let m3 = 6;
+(m1 == m2)       // Returns true
 
-document.getElementById("demo").innerHTML = x;
+const cars = ["Saab", "Volvo", "BMW"];
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number"
+let car;    // Value is undefined, type is undefined
+
+let a = {firstName:"John", lastName:"Doe"}; //object
+
+document.getElementById("demo").innerHTML = x;//callbyid,and mention practicular variable
+document.getElementById("obj").innerHTML = a;
+document.getElementById("numstr").innerHTML = i1;
+document.getElementById("strnum").innerHTML = i2;
+document.getElementById("num2str").innerHTML = i3;
+document.getElementById("strnum2").innerHTML = i4;
+document.getElementById("dblequo").innerHTML = carName1;
+document.getElementById("sinquo").innerHTML = carName2;
+document.getElementById("sqdq").innerHTML = answer1;
+document.getElementById("sqidq").innerHTML = answer2;
+document.getElementById("dqsq").innerHTML = answer3;
+document.getElementById("dec").innerHTML = x1;
+document.getElementById("wodec").innerHTML = x2;
+document.getElementById("e1").innerHTML = y1;
+document.getElementById("e2").innerHTML = y2;
+document.getElementById("boolean1").innerHTML = (m1 == m2) + "<br>" + (m1 == m3); ;
+
+document.getElementById("array").innerHTML = cars;
+document.getElementById("object").innerHTML = person;
+document.getElementById("typeofnum").innerHTML =typeof 0 + "<br>" + 
+typeof 314 + "<br>" +
+typeof 3.14 + "<br>" +
+typeof (3) + "<br>" +
+typeof (3 + 4);;
+document.getElementById("typeofstr").innerHTML = typeof "" + "<br>" +typeof "John" + "<br>" + typeof "John Doe";;
+document.getElementById("objobj").innerHTML = car;
+
+
 </script>
 
 </body>
