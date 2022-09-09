@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body
+    style="background-color: YellowGreen;" >
+<h2>Details of the Employee</h2>
+ 
+<p id="DT434" style ="color:white;"></p>
+<p id="DT435" style ="color:white;"></p>
+<p id="DT436" style ="color:white;"></p>
+<p id="DT437" style ="color:white;"></p>
+
+
+<script>
+// Create an object:
+ 
+const employee1 = {
+  firstName: "Leo",
+  lastName: "Sam",
+  age: 30,
+  designation: "developer",
+  salary: "50000"
+};
+const employee2 = {
+  firstName: "Bledson",
+  lastName: "Doe",
+  age: 25,
+  designation: "tester",
+  salary: "45000"
+};
+const employee3 = {
+  firstName: "Ragul",
+  lastName: "Doss",
+  age: 26,
+  designation: "developer",
+  salary: "60000"
+};
+const employee4 = {
+  firstName: "Olive",
+  lastName: "Son",
+  age: 27,
+  designation: "tester",
+  salary: "80000"
+};
+
+// Display some data from the object:
+document.getElementById("DT434").innerHTML = employee1.firstName + employee1.lastName + " is " + employee1.age + " years old.He is working as a " + employee1.designation + " and his salary is "+ employee1.salary + " per month" ;
+document.getElementById("DT435").innerHTML = employee2.firstName + employee2.lastName + " is " + employee2.age + " years old.He is working as a " + employee2.designation + " and his salary is "+ employee2.salary + " per month" ;
+document.getElementById("DT436").innerHTML = employee3.firstName + employee3.lastName + " is " + employee3.age + " years old.He is working as a " + employee3.designation + " and his salary is "+ employee3.salary + " per month" ;
+document.getElementById("DT437").innerHTML = employee4.firstName + employee4.lastName + " is " + employee4.age + " years old.He is working as a " + employee4.designation + " and his salary is "+ employee4.salary + " per month" ;
+</script>
+
+</body>
+</html>
