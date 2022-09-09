@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@
     
 </body>
 </left>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations</title>
+</head>
+<left>
+<body>
+    <h2>OPERATIONS</h2>
+    <script>
+        let input1 = parseInt(prompt("Enter first value : ")); 
+        let input2 = parseInt(prompt("Enter second value : ")); 
+        function greaterValue(input1, input2){
+            document.write(" To check the greater value <br/>");
+            if(input1 > input2){
+                document.write(input1 +" is greater value <br/> " );
+            }
+            else{
+                document.write(input2 +" is greater value <br/> " );
+            }
+        }
+        function oddOrEven(input1 , input2){
+            document.write("To check the value is odd or even <br/>");
+            if(input1 %2 === 0){
+                document.write(input1 +" is even number <br/> " );
+            }
+            else{
+                document.write(input1 +" is odd number <br/> " );
+            }
+            if(input2 %2 === 0){
+                document.write(input2 +" is even number <br/> " );
+            }
+            else{
+                document.write(input2 +" is odd number <br/> " );
+            }
+        }
+        function eligibility(input1 , input2){
+            document.write("To check the age value is eligible to vote <br/>");
+            if(input1 >18){
+                document.write(input1+" is eligible <br/>");
+            }
+            else{
+                document.write(input1+" is not eligible <br/>");
+            }
+            if(input2 >18){
+                document.write(input2+" is eligible <br/><br/>");
+            }
+            else{
+                document.write(input2+" is not eligible <br/><br/>");
+            }
+        }
+        function arithmeticCalculation(input1, input2){
+            document.write("To perform the basic operations of two values: <br/>");
+            document.write("Result of the operations value is : ");
+            document.write("<br/> Addition of "+input1+ " and "+ input2+ " is : "+ (input1 + input2));
+            document.write("<br/> Subraction of "+input1+ " and "+ input2+ " is : "+ (input1 - input2));
+            document.write("<br/> Multiplication of "+input1+ " and "+ input2+ " is :  "+ (input1 * input2));
+            document.write("<br/> Division of "+input1+ " and "+ input2+ " is : "+ (input1 / input2));
+        }
+        function precedenceOperator(input1, input2){
+            document.write("<br/><br/> To perform the precedence operations using three values <br/>");
+            let input3 = 30;
+            document.write("input1 = "+input1+ "<br/> input2 = "+input2+"<br/> input3 = "+input3);
+            document.write("<br/> To check the expression value of input1+input2-input1 is : "+(input1+input2-input1));
+            document.write("<br/> To check the expression value of input2+input1*(input2+input3) is : "+input2+input1*(input2+input3));
+            document.write("<br/> To check the expression value of input1*(input3+input2*input3) is : "+input1*(input3+input2*input3));
+        }
+    
+        greaterValue(input1, input2);
+        oddOrEven(input1, input2);
+        eligibility(input1, input2);
+        arithmeticCalculation(input1, input2);
+        precedenceOperator(input1, input2);
+    </script>
+    
+</body>
+</left>
+>>>>>>> a2d5880e7244ddb65c63d99b92b0aaecd560bb61
 </html>
