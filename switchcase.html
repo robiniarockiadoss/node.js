@@ -1,0 +1,83 @@
+<html>
+    <body>
+        <script>
+            let a, b, c=5, ans, op;
+
+                console.log("Press key 1 to find  the expression value of a+b :");
+                console.log("Press key 2 to find  the expression value of a-b :");
+                console.log("Press key 3 to find  the expression value of a*b :");
+                console.log("Press key 4 to find  the expression value of a/b :");
+                console.log("Press key 5 to find  the expression value of a+b-c :");
+                console.log("Press key 6 to find  the expression value of a-a+b : ");
+                console.log("Press key 7 to find  the expression value of a(a+b): ");
+                console.log("Press key 8 to find  the expression value of (a*a),b : ");
+                console.log("Press key 9 to find  the expression value of (a+b*c)(b+c) : ");
+                console.log("Press key 10 to find  the expression value of (a+b+c)*c : ");
+                console.log("Press key 11 to find  the expression value of (a*b)+(b*c) : ");
+                
+
+                op = parseInt(prompt("select your option,which one you want to perform : "))
+
+                if (op > 0 && op < 12) {
+                    a = parseInt(prompt("Enter first number"))
+                    b = parseInt(prompt("Enter second number"))
+                   
+
+                }
+
+                switch (op) {
+                    case 1:
+                        ans = a + b;
+                        console.log("\nAnswer is :" + ans)
+                        break
+
+                    case 2:
+                        ans = a - b
+                        console.log("\nAnswer is :" + ans)
+                        break
+
+                    case 3:
+                        ans = a * b
+                        console.log("\nAnswer is :" + ans)
+                        break
+
+                    case 4:
+                        ans = a / b
+                        console.log("\nAnswer is :" + ans)
+                        break
+
+                    case 5:
+                        ans = a+b-c;
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 6:
+                        ans = a-a+b;
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 7:
+                        ans = a(a+b);
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 8:
+                        ans = (a*a),b;
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 9:
+                        ans = (a+b*c)(b+c);
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 10:
+                        ans = (a+b+c)*c;
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    case 11:
+                        ans = (a*b)+(b*c);
+                        console.log("\nAnswer is :" + ans)
+                        break
+                    
+                    default:
+                        console.log("Invalid option:" + op)
+                }
+        </script>
+    </body>
+</html>
