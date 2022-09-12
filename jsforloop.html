@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Avaiable Mobiles</h2>
+
+<p id="demo"></p>
+<p id="count"></p>
+
+<script>
+const mobiles = ["vivo", "realme", "redmi", "oneplus", "samsung", "oppo"];
+
+let text = "";
+for (let i = 0; i < mobiles.length; i++) { //loop1
+  text += "Brand name is :"+ mobiles[i] + "<br>";
+}
+let availableCount = 4;
+for (let j = 3; j <= 6; j++) {//loop2 ,loop2 is executed successfully then only loop1 will start the execution
+ document.write("Total available count is: "+ availableCount + "<br>");
+}
+document.getElementById("count").innerHTML = availableCount;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

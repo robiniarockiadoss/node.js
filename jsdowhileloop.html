@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body style ="background-color:rgb(7, 65, 99);">
+
+        <h2 style ="color:rgb(228, 235, 240); "> Salary increment details </h2>
+        
+        <p style ="color:rgb(84, 91, 95);" id="sal"></p>
+        
+
+<script>
+      let salary = ""
+      let i = 0;
+
+      do {
+          salary += "<br> This year increment percentage is " + i;
+          i++; 
+        }
+      while (i < 10);  
+
+          document.getElementById("sal").innerHTML = salary;
+
+</script>
+
+</body>
+</html>

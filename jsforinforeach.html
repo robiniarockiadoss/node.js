@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(64, 235, 78);" >
+
+<h2>INDIUM SOFTWARE</h2>
+<p1>Employee Details</br></br></p1>
+<p1 id="candidate" style ="color:rgb(255, 255, 255);"></p1>
+<h3>SALARY INCREMENT DETAILS</h3>
+<p2>Increments per year</br></br></p2>
+<p2 id="inc" style ="color:rgb(245, 6, 6);"></br></p2>
+<script>
+  //for in loop
+const person = {firstname:"John", lastname:"Doe", age:25 , designation:"Developer" , salary:"50000"}; 
+
+let detail = "";
+for (let x in person) {//for in statement loops through the properties of an object
+ detail += person[x] + " ";
+}
+document.getElementById("candidate").innerHTML = detail;
+
+//for each loop
+const numbers = [10, 20, 30, 40, 50];
+
+let increment = "";
+numbers.forEach(myFunction);
+document.getElementById("inc").innerHTML = increment;
+
+function myFunction(value) {
+  increment += value + "<br>"; 
+}
+
+
+</script>
+
+</body>
+</html>
