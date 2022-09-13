@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body 
+    style="background-color: rgb(183, 235, 79);">
+
+<h2 style="color: rgb(60, 75, 30);" >Software Companies</h2>
+<p1 id="soft" style ="color:rgb(13, 3, 100);"></p1> 
+
+<h3 style="color: rgb(211, 20, 20);" >Interviews going for</h3>
+<p2 id="openings" style ="color:rgb(168, 166, 182);"></p2>
+
+<h3 style="color: rgb(211, 90, 20);" >Developer </h3>
+<p3 id="dev" style ="color:rgb(45, 70, 16);"></p3>
+
+<h3 style="color: rgb(16, 174, 223);" >Placed in:  </h3>
+<p4 id="devsel" style ="color:rgb(79, 136, 14);"></p4>
+<p4 id="devsel1" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >Testers count :  </h4>
+<p4 id="tst" style ="color:rgb(79, 136, 14);"></p4> 
+
+<h4 style="color: rgb(16, 174, 223);" >Accessing the First Array Element </h4>
+<p4 id="tst1" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >Accessing the Last Array Element </h4>
+<p4 id="tst2" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >Looping Array Elements</h4>
+<p4 id="tst3" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >use the Array.forEach() function  </h4>
+<p4 id="tst4" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >Adding Array Elements </h4>
+<p4 id="tst5" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >JavaScript operator typeof returns "object"  </h4>
+<p4 id="tst6" style ="color:rgb(79, 136, 14);"></p4>
+
+<h4 style="color: rgb(16, 174, 223);" >instanceof operator returns true if an object is created by a given constructor   </h4>
+<p4 id="tst7" style ="color:rgb(79, 136, 14);"></p4>
+
+
+
+<script>
+
+//An array is a special variable, which can hold more than one value
+
+const companies = ["Indium", "Wibro", "Tcs"];
+document.getElementById("soft").innerHTML = companies;
+
+//An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+const designation = [];
+designation[0]= "Developer";
+designation[1]= "Tester";
+designation[2]= "Cloud Enginner";
+document.getElementById("openings").innerHTML = designation;
+
+//Using the JavaScript Keyword new
+
+const developer = new Array("spring boot developer", "Nodejs developer", "GOlang developer");
+document.getElementById("dev").innerHTML = developer;
+
+//You access an array element by referring to the index number
+
+const placed = ["spring boot developer", "Nodejs developer", "GOlang developer"];
+document.getElementById("devsel").innerHTML = placed[0];
+
+//Changing an Array Element
+const placed1 = ["spring boot developer", "Nodejs developer", "GOlang developer"];
+placed1[0] = "ReactJs developer";
+document.getElementById("devsel1").innerHTML = placed1[0];
+
+//length property of an array returns the length of an array
+
+const testers = ["tester1", "tester2", "tester3", "tester4"];
+document.getElementById("tst").innerHTML = testers.length;
+
+//Accessing the First Array Element
+
+const tester1= ["test1", "test2", "test3", "test4"];
+document.getElementById("tst1").innerHTML = tester1[0];
+
+//Accessing the Last Array Element
+
+document.getElementById("tst2").innerHTML = tester1[tester1.length-1];
+
+//Looping Array Elements
+
+let fLen = tester1.length;
+
+let ts = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  ts += "<li>" + tester1[i] + "</li>";
+}
+ts += "</ul>";
+document.getElementById("tst3").innerHTML = tester1.length;
+
+//use the Array.forEach() function
+
+let ts1 = "<ul>";
+tester1.forEach(myFunction);
+ts1 += "</ul>";
+document.getElementById("tst4").innerHTML = ts1;
+
+function myFunction(value) {
+  ts1 += "<li>" + value + "</li>";
+} 
+document.getElementById("tst4").innerHTML = tester1.length;
+
+//Adding Array Elements
+
+function myFunction() {
+  tester1.push("test2");
+  document.getElementById("tst5").innerHTML = tester1;
+}
+//JavaScript operator typeof returns "object"
+
+document.getElementById("tst6").innerHTML = typeof tester1;
+
+//instanceof operator returns true if an object is created by a given constructor
+
+document.getElementById("tst7").innerHTML = tester1 instanceof Array;
+
+
+</script>
+</body>
+</html>
