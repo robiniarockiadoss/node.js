@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: YellowGreen;" >
+
+<h2>JavaScript Callback</h2>
+<h1 id="fun1" style ="color:rgb(241, 238, 33);"></h1>
+
+<h2>JavaScript Closures</h2>
+<button type="button" onclick="myFunction()">Count!</button>
+<h2 id="fun2" style ="color:rgb(241, 95, 11);"></h2>
+
+<h2>JavaScript Promise</h2>
+<h2 id="fun3" style ="color:rgb(81, 109, 17);"></h2>
+
+
+<script>
+
+//Event loop
+setTimeout(firFunction, 3000);
+
+//callback function
+function firFunction() { 
+  document.getElementById("fun1").innerHTML = "Total number of count!!";
+}
+
+//closure
+const add = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter;}
+})();
+function myFunction(){
+  document.getElementById("fun2").innerHTML = add();
+}
+
+//promises
+function myDisplayer(some) {
+  document.getElementById("fun3").innerHTML = some;
+}
+let myPromise = new Promise(function(myResolve, myReject) {
+  let maxcount = 10;
+  if (maxcount == 10 ) {
+    myResolve(" Count is allowed ");
+    
+  } else {
+    myReject("Count is not allowed");
+  }
+ 
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+
+
+</script>
+
+</body>
+</html>
